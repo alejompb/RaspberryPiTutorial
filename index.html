@@ -104,10 +104,15 @@
 
 <p>In this section you will learn how to set up the Pi without using any optional components, taking advantage of the features that the Model 3-B provides. </p>
 
-<p>*NOTE: IF YOU HAVE REACHED THIS SITE BUT YOU DO NOT HAVE THIS MODEL AND YOU HAVE KEPT READING, HERE YOU HAVE A COUPLE OF LINKS BY WHICH YOU WILL BE ABLE TO SET UP THE PI. <a href="https://github.com/">GitHub</a>
-<a href="https://www.youtube.com/watch?v=toWBmUsWD6M">SETTING UP RASPBERRY PI USING YOUR LAPTOP SCREEN AS DISPLAY, AS WELL AS LAPTOP KEYBOARD AND MOUSE.</a>
-<a href="https://www.youtube.com/watch?v=L3amYDRlIUs">SETTING UP RASPBERRY PI USING A MONITOR, HDMI CABLE, WIRELESS KEYBOARD AND WIRELESS MOUSE.</a>
-AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION: [[DIFFERENT KINDS OF PROJECT IMPLEMENTATIONS WITH THE RASPBERRY PI|###Different kinds of Project implementations with the Pi]] *</p>
+<p><em>NOTE: IF YOU HAVE REACHED THIS SITE BUT YOU DO NOT HAVE THIS MODEL AND YOU HAVE KEPT READING, HERE YOU HAVE A COUPLE OF LINKS BY WHICH YOU WILL BE ABLE TO SET UP THE PI.</em></p>
+
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=toWBmUsWD6M">SETTING UP RASPBERRY PI USING YOUR LAPTOP SCREEN AS DISPLAY, AS WELL AS LAPTOP KEYBOARD AND MOUSE.</a>.</p></li>
+<li><p>SETTING UP RASPBERRY PI USING A MONITOR, HDMI CABLE, WIRELESS KEYBOARD AND WIRELESS MOUSE.]
+(<a href="https://www.youtube.com/watch?v=L3amYDRlIUs">https://www.youtube.com/watch?v=L3amYDRlIUs</a>)</p></li>
+</ul>
+
+<p><em>AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION:</em> <a href="###Different%20kinds%20of%20Project%20implementations%20with%20the%20Pi">DIFFERENT KINDS OF PROJECT IMPLEMENTATIONS WITH THE RASPBERRY PI</a></p>
 
 <p>There are plenty of ways of how to set up your Pi. I have decided to show you how to do it using the least number of hardware components, if you are a student and you cannot wait to buy everything you need. 
 First of all, I will list the software components that you need to download and install.</p>
@@ -165,38 +170,24 @@ First of all, I will list the software components that you need to download and 
 <li>Select your WiFi connection</li>
 <li>Click on properties and then <em>Sharing</em> tab</li>
 <li>Select both options in order to <em>Allow other network users</em> (your Raspberry Pi) <em>to connect through this computer´s Internet connection</em>
-</li>
+<strong>NOTE: AT THIS POINT IT IS IMPORTANT TO TAKE INTO ACCOUNT THAT YOU HAVE TO ALLOW JUST THE ETHERNET CONNECTION! YOU MAY HAVE OTHER KIND OF NETWORK CONNECTIONS (LIKE A VIRTUAL MACHINE HOST), WE DO NOT WANT TO SHARE INTERNET WITH ANYTHING ELSE IN THIS CASE, JUST WITH THE COMPONENT THAT WILL BE CONNECTED TO OUR COMPUTER VIA ETHERNET (THIS IS YOUR RASPBERRY PI). IN CASE YOU HAVE ANY ISSUE OPEN YOUR NETWORK CONNECTIONS AND DISABLE THE OTHER ADAPTERS (SPECIALLY, VIRTUAL MACHINE ADAPTER CONNECTIONS SUCH AS VIRTUALBOX OR VM WARE).</strong>
+IMAGE</li>
 </ul>
 </li>
-</ol>
-
-<p><strong>NOTE: AT THIS POINT IT IS IMPORTANT TO TAKE INTO ACCOUNT THAT YOU HAVE TO ALLOW JUST THE ETHERNET CONNECTION! YOU MAY HAVE OTHER KIND OF NETWORK CONNECTIONS (LIKE A VIRTUAL MACHINE HOST), WE DO NOT WANT TO SHARE INTERNET WITH ANYTHING ELSE IN THIS CASE, JUST WITH THE COMPONENT THAT WILL BE CONNECTED TO OUR COMPUTER VIA ETHERNET (THIS IS YOUR RASPBERRY PI). IN CASE YOU HAVE ANY ISSUE OPEN YOUR NETWORK CONNECTIONS AND DISABLE THE OTHER ADAPTERS (SPECIALLY, VIRTUAL MACHINE ADAPTER CONNECTIONS SUCH AS VIRTUALBOX OR VM WARE).</strong></p>
-
-<p>IMAGE</p>
-
-<ol>
 <li>In this part you have to set the wired configuration. If you did the last part correctly, your computer will assign an IP to your Pi through the Ethernet port, you can check that clicking on the <em>Ethernet</em> connection and then <em>Details</em> in the <em>Network and Sharing Center</em>
 
 <ul>
 <li>Stick your SD card in the Pi´s slot.</li>
 <li>Ethernet cable connecting the Pi and your laptop.</li>
 <li>Power supply to the Pi. 
-After all the Pi should look like this</li>
+After all the Pi should look like this
+IMAGE
+<em>Note: check that there is a red light near to the power supply and another one green and yellow under the Ethernet connection.</em>
+</li>
 </ul>
 </li>
-</ol>
-
-<p>IMAGE</p>
-
-<p><em>Note: check that there is a red light near to the power supply and another one green and yellow under the Ethernet connection.</em></p>
-
-<ol>
-<li>Open Xming, I recommend the <em>One Window</em> display setting, otherwise it will get confusing to navigate between the Pi´s windows and your laptop´s windows.</li>
-</ol>
-
-<p>IMAGE</p>
-
-<ol>
+<li>Open Xming, I recommend the <em>One Window</em> display setting, otherwise it will get confusing to navigate between the Pi´s windows and your laptop´s windows.
+IMAGE</li>
 <li>Open Putty and set the following configuration:
 
 <ul>
@@ -208,7 +199,7 @@ After all the Pi should look like this</li>
 <strong>Connection Type:</strong> SSH</li>
 <li>In the <em>Connection</em> category (left side), expand <em>SSH</em>, click on <em>X11</em> and enable <strong>X11 forwarding</strong>.</li>
 <li>(Optional) I would recommend to save the settings in order to not repeating the same thing always we want to connect to the Pi via PuTTy.</li>
-<li>Click on open. That will make your Pi´s screen appear in your Xming window.</li>
+<li>Click on <em>Open</em>. That will make your Pi´s screen appear in your Xming window.</li>
 <li>Congratulations you can navigate within your Pi, use internet and download your programs directly, and all that using your computer´s keyboard and mouse!</li>
 </ul>
 </li>
@@ -226,18 +217,18 @@ For that we will need everything we have done in the section How to get started 
      * Install the environment directly into your SD card.
 This approach will be based on the same steps as in the section How to get started but instead of burning Raspbian or any other similar OS, we will install an OS that already has the functionality that we want.</p>
 
-<p>In order for you to feel the difference more clearly I will show projects that do the same thing but from different approaches.</p>
+<p>In order for you to feel the difference more clearly I will show projects that do the same thing but from different approaches. Special thanks to <strong>PiMyLife</strong></p>
 
-<h3>
-<a id="example-of-project-using-raspbian" class="anchor" href="#example-of-project-using-raspbian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using Raspbian</h3>
+<h2>
+<a id="example-of-project-using-raspbian" class="anchor" href="#example-of-project-using-raspbian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using Raspbian</h2>
 
-<p>The details of this simple project can be found <a href="https://pimylifeup.com/raspberry-pi-dosbox/">here</a> 
+<p>The details of this simple project can be found <a href="https://pimylifeup.com/raspberry-pi-dosbox/">here</a>. 
 In this case all we have to do is following the same steps as before. Once we have the Pi´s display in Xming we will start with the tutorial from <strong>PiMyLife</strong>.</p>
 
-<h3>
-<a id="example-of-project-using-a-specialized-os" class="anchor" href="#example-of-project-using-a-specialized-os" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using a specialized OS</h3>
+<h2>
+<a id="example-of-project-using-a-specialized-os" class="anchor" href="#example-of-project-using-a-specialized-os" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using a specialized OS</h2>
 
-<p>The details of this project can be found <a href="https://pimylifeup.com/raspberry-pi-emulator/">here</a>
+<p>The details of this project can be found <a href="https://pimylifeup.com/raspberry-pi-emulator/">here</a>.
 In this case we will follow the steps mentioned in How to get started section. The changes are the following:</p>
 
 <ul>
