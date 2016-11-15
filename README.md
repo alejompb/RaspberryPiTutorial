@@ -3,7 +3,7 @@ In this tutorial I will make an introduction and a general overview of what is, 
 
 * [What is a Raspberry Pi](# What is a Raspberry Pi)
 * [How to get started](# How to get started)
-* [Different kinds of Project implementations with the Pi](#Different kinds of Project implementations with the Pi)
+* [Different kinds of Project implementations with the Pi](# Different Pi project implementations)
    - [Example of project using a Pi OS (Raspbian)](## Example of project using a Pi OS (Raspbian))
    - [Example of project installing a new image of an adapted OS](## Example of project installing a new image of an adapted OS)
 
@@ -126,7 +126,7 @@ IMAGE
 ****
 
 
-#Different Pi project implementations
+# Different Pi project implementations
 
 With the Raspberry Pi you can do almost anything you want, taking into consideration its hardware limits, all in all it’s a simple computer so the range of possibilities is vast.
 In terms of how to start thinking in a Raspberry Pi project here I explain two main approaches:
