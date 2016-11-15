@@ -4,75 +4,259 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Raspberrypitutorial by alejompb</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <h1>Raspberrypitutorial</h1>
         <p>Peer tutorial</p>
-
-        <p class="view"><a href="https://github.com/alejompb/RaspberryPiTutorial">View the Project on GitHub <small>alejompb/RaspberryPiTutorial</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/alejompb/RaspberryPiTutorial/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/alejompb/RaspberryPiTutorial/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/alejompb/RaspberryPiTutorial">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/alejompb/RaspberryPiTutorial" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/alejompb/RaspberryPiTutorial/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/alejompb/RaspberryPiTutorial/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <h3>
 <a id="raspberry-pi-peer-tutorial" class="anchor" href="#raspberry-pi-peer-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Raspberry Pi Peer Tutorial.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p>In this tutorial I will make an introduction and a general overview of what is, and how to set up and run simple applications in the Raspberry Pi. Note that I will use the Raspberry Pi model 3B. Some features may change from model to model, however, the main concept will be always the same.</p>
 
-<p>*fghj
-*fghj</p>
-
-<p>+dfghdfgh
-+dgfhjdgh</p>
-
-<p>-fghjfgh
--gdfdsf   </p>
+<ul>
+<li>[[What is a Raspberry Pi|###What is a Raspberry Pi]]</li>
+<li>[[How to get started|###How to get started]]</li>
+<li>[[Different kinds of Project implementations with the Pi|###Different kinds of Project implementations with the Pi]]</li>
+<li>[[Example of project using a Pi OS (Raspbian)|###Example of project using a Pi OS (Raspbian)]]</li>
+<li>[[Example of project installing a new image of an adapted OS|###Example of project installing a new image of an adapted OS]]</li>
+</ul>
 
 <hr>
 
-<p>this is     code     </p>
+<h3>
+<a id="what-is-a-raspberry-pi" class="anchor" href="#what-is-a-raspberry-pi" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is a Raspberry Pi</h3>
+
+<blockquote>
+<p>The Raspberry Pi is a series of credit card-sized single-board computers developed in the United Kingdom by the &gt;Raspberry Pi Foundation to promote the teaching of basic computer science in schools and developing countries.   <strong>Wikipedia</strong></p>
+</blockquote>
+
+<p>The Raspberry Pi is a very small and tiny computer, capable of running different operating systems. The main purpose of its use is running simple applications due to its limitations at a hardware level. Normally, a Pi has the following common features:</p>
+
+<ul>
+<li>CPU speed: 700 MHz to 1.2 GHz.</li>
+<li>RAM memory 256 MB to 1 GB RAM. </li>
+<li>1 SD card slot </li>
+<li>1-4 USB slots</li>
+<li>HDMI port</li>
+<li>3.5 mm phone jack audio port</li>
+</ul>
+
+<p>Special features of the lastest models:</p>
+
+<ul>
+<li>8P8C Ethernet port </li>
+<li>Wi-Fi 802.11n</li>
+<li>Bluetooth</li>
+</ul>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="how-to-get-started" class="anchor" href="#how-to-get-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to get started</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>In order to set up the Raspberry Pi we will need:</p>
+
+<ul>
+<li>Ethernet cable</li>
+<li>SD card of at least 4 GB</li>
+<li>Power adaptor</li>
+<li>Computer</li>
+<li>Your Raspberry Pi 3-B</li>
+</ul>
+
+<p>Optional components:</p>
+
+<ul>
+<li>Wireless keyboard </li>
+<li>Wireless mouse</li>
+<li>HDMI cable</li>
+<li>Monitor</li>
+</ul>
+
+<p>In this section you will learn how to set up the Pi without using any optional components, taking advantage of the features that the Model 3-B provides. </p>
+
+<p>*NOTE: IF YOU HAVE REACHED THIS SITE BUT YOU DO NOT HAVE THIS MODEL AND YOU HAVE KEPT READING, HERE YOU HAVE A COUPLE OF LINKS BY WHICH YOU WILL BE ABLE TO SET UP THE PI. <a href="https://github.com/">GitHub</a>
+<a href="https://www.youtube.com/watch?v=toWBmUsWD6M">SETTING UP RASPBERRY PI USING YOUR LAPTOP SCREEN AS DISPLAY, AS WELL AS LAPTOP KEYBOARD AND MOUSE.</a>
+<a href="https://www.youtube.com/watch?v=L3amYDRlIUs">SETTING UP RASPBERRY PI USING A MONITOR, HDMI CABLE, WIRELESS KEYBOARD AND WIRELESS MOUSE.</a>
+AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION: [[DIFFERENT KINDS OF PROJECT IMPLEMENTATIONS WITH THE RASPBERRY PI|###Different kinds of Project implementations with the Pi]] *</p>
+
+<p>There are plenty of ways of how to set up your Pi. I have decided to show you how to do it using the least number of hardware components, if you are a student and you cannot wait to buy everything you need. 
+First of all, I will list the software components that you need to download and install.</p>
+
+<ul>
+<li><p><a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian OS</a>: This is the operating system that will be installed in the Pi, you can install any other, however, I recommend this one due to its facility of use. Another reason is that it comes with just one file, the image file, making the process of installation easier. Click on Download ZIP under RASPBIAN JESSIE WITH PIXEL to start your download. I recommend to start with this one since it is a heavy file and it is going to take a while unless you have a super fast internet connection.</p></li>
+<li><p><a href="https://sourceforge.net/projects/win32diskimager/files/latest/download">Win32DiskImager</a>: We will use this software to burn the Pi OS in the SD card.</p></li>
+<li><p><a href="https://www.sdcard.org/downloads/formatter_4/">SDFormatter</a>: Click on this link that will direct you to the SD Association website. In the left bar click on the download link that that is more appropriate for you (Mac or Windows), after clicking on Accept your download will start. </p></li>
+<li><p><a href="http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html">PuTTy</a>: Will be used to connect the Pi to the computer through SSH connection. For that we will need the Pi to be connected to the Internet, that will be explained later.</p></li>
+<li><p><a href="http://sourceforge.net/projects/xming/">Xming</a>: This program will allow us to see the Pi´s display on our laptop´s screen.</p></li>
+</ul>
+
+<p>Once we have everything downloaded and installed let´s proceed with the configuration.</p>
+
+<ol>
+<li>Format the SD card to avoid troubles when installing the Pi OS.
+
+<ul>
+<li>Insert your SD card into your laptop</li>
+<li>Open SD Formatter</li>
+<li>Make sure that the Volume label is the one associated with your SD card</li>
+<li>Click on Option and select:
+
+<ul>
+<li>Format Type: FULL (Erase)</li>
+<li>Format Size Adjustment: ON</li>
+</ul>
+</li>
+<li>Click on format
+
+<ul>
+<li>Wait until it´s finished</li>
+<li>Check that your SD card is empty</li>
+<li>Exit program</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Now it´s time to burn the image of the OS into the SD card. 
+
+<ul>
+<li>Open Win32Disk Manager </li>
+<li>Make sure you select the Volume label with the one that correspond to the SD card. You can check it in the tab <em>Device</em>
+</li>
+<li>Click on the folder symbol and select the image of the Raspbian OS. <em>NOTE: it is likely that the OS image is within            a compressed file; if you have not done it yet first, unzip it, and then you can select the image file.</em>
+</li>
+<li>Click on the Write button to burn the image in your SD card.</li>
+<li>Once finished eject your SD card safely from your computer.</li>
+</ul>
+</li>
+<li>This part of the configuration is really important, it allows the Pi to get internet signal from your laptop´s connection.
+
+<ul>
+<li>Open Network and Sharing Center (Windows users)</li>
+<li>Select your WiFi connection</li>
+<li>Click on properties and then <em>Sharing</em> tab</li>
+<li>Select both options in order to <em>Allow other network users</em> (your Raspberry Pi) <em>to connect through this computer´s Internet connection</em>
+</li>
+</ul>
+</li>
+</ol>
+
+<p><strong>NOTE: AT THIS POINT IT IS IMPORTANT TO TAKE INTO ACCOUNT THAT YOU HAVE TO ALLOW JUST THE ETHERNET CONNECTION! YOU MAY HAVE OTHER KIND OF NETWORK CONNECTIONS (LIKE A VIRTUAL MACHINE HOST), WE DO NOT WANT TO SHARE INTERNET WITH ANYTHING ELSE IN THIS CASE, JUST WITH THE COMPONENT THAT WILL BE CONNECTED TO OUR COMPUTER VIA ETHERNET (THIS IS YOUR RASPBERRY PI). IN CASE YOU HAVE ANY ISSUE OPEN YOUR NETWORK CONNECTIONS AND DISABLE THE OTHER ADAPTERS (SPECIALLY, VIRTUAL MACHINE ADAPTER CONNECTIONS SUCH AS VIRTUALBOX OR VM WARE).</strong></p>
+
+<p>IMAGE</p>
+
+<ol>
+<li>In this part you have to set the wired configuration. If you did the last part correctly, your computer will assign an IP to your Pi through the Ethernet port, you can check that clicking on the <em>Ethernet</em> connection and then <em>Details</em> in the <em>Network and Sharing Center</em>
+
+<ul>
+<li>Stick your SD card in the Pi´s slot.</li>
+<li>Ethernet cable connecting the Pi and your laptop.</li>
+<li>Power supply to the Pi. 
+After all the Pi should look like this</li>
+</ul>
+</li>
+</ol>
+
+<p>IMAGE</p>
+
+<p><em>Note: check that there is a red light near to the power supply and another one green and yellow under the Ethernet connection.</em></p>
+
+<ol>
+<li>Open Xming, I recommend the <em>One Window</em> display setting, otherwise it will get confusing to navigate between the Pi´s windows and your laptop´s windows.</li>
+</ol>
+
+<p>IMAGE</p>
+
+<ol>
+<li>Open Putty and set the following configuration:
+
+<ul>
+<li>
+<strong>Host Name:</strong> raspberrypi.mshome.net</li>
+<li>
+<strong>Port:</strong> 22</li>
+<li>
+<strong>Connection Type:</strong> SSH</li>
+<li>In the <em>Connection</em> category (left side), expand <em>SSH</em>, click on <em>X11</em> and enable <strong>X11 forwarding</strong>.</li>
+<li>(Optional) I would recommend to save the settings in order to not repeating the same thing always we want to connect to the Pi via PuTTy.</li>
+<li>Click on open. That will make your Pi´s screen appear in your Xming window.</li>
+<li>Congratulations you can navigate within your Pi, use internet and download your programs directly, and all that using your computer´s keyboard and mouse!</li>
+</ul>
+</li>
+</ol>
+
+<p>IMAGE</p>
 
 <h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<a id="different-pi-project-implementations" class="anchor" href="#different-pi-project-implementations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Different Pi project implementations</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regu <a href="https://github.com/">https://github.com/</a> lar HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
-<img src="https://github.com/unicorn.png" alt="My Unicorn"></p>
+<p>With the Raspberry Pi you can do almost anything you want, taking into consideration its hardware limits, all in all it’s a simple computer so the range of possibilities is vast.
+In terms of how to start thinking in a Raspberry Pi project here I explain two main approaches:
+     * Create or download a program or application from your Pi´s OS
+For that we will need everything we have done in the section How to get started and then, starting from that point, download and run the program we want. This is the same concept as having a new computer, but infinitely smaller, simpler and extremely cheap.
+     * Install the environment directly into your SD card.
+This approach will be based on the same steps as in the section How to get started but instead of burning Raspbian or any other similar OS, we will install an OS that already has the functionality that we want.</p>
+
+<p>In order for you to feel the difference more clearly I will show projects that do the same thing but from different approaches.</p>
 
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="example-of-project-using-raspbian" class="anchor" href="#example-of-project-using-raspbian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using Raspbian</h3>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>The details of this simple project can be found <a href="https://pimylifeup.com/raspberry-pi-dosbox/">here</a> 
+In this case all we have to do is following the same steps as before. Once we have the Pi´s display in Xming we will start with the tutorial from <strong>PiMyLife</strong>.</p>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="example-of-project-using-a-specialized-os" class="anchor" href="#example-of-project-using-a-specialized-os" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using a specialized OS</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>The details of this project can be found <a href="https://pimylifeup.com/raspberry-pi-emulator/">here</a>
+In this case we will follow the steps mentioned in How to get started section. The changes are the following:</p>
+
+<ul>
+<li>Instead of downloading and installing in the SD card Raspbian we will download *<a href="https://retropie.org.uk/download/">Pi Emulator OS</a>.</li>
+<li>Complete step 1</li>
+<li>Complete step 2 and install Pi Emulator OS, instead of Raspbian, in our Raspberry Pi.</li>
+<li>Complete steps 3, 4, 5 and 6.</li>
+</ul>
+
+<p>Now we can start the <strong>PiMyLife</strong> tutorial from <em>step 3.3</em>.</p>
+
+<p>I hope you have now a better idea about what is a Raspberry Pi, how to connect to the Pi through a SSH connection without using any extra hardware (such as a monitor, keyboard or mouse), not even a router, and the different approaches you may encounter in Raspberry Pi projects.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/alejompb">alejompb</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/alejompb">alejompb</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
