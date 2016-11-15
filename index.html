@@ -173,29 +173,30 @@ First of all, I will list the software components that you need to download and 
 
 <ul>
 <li>Open Network and Sharing Center (Windows users)</li>
-<li>Select your WiFi connection <img src="https://github.com/alejompb/RaspberryPiTutorial/1.PNG" alt="WiFi connection">
+<li>Select your WiFi connection <img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/1.PNG" alt="WiFi connection">
 </li>
-<li>Click on properties and then <em>Sharing</em> tab</li>
+<li>Click on properties and then <em>Sharing</em> tab <img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/2.PNG" alt="Properties"> 
+<img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/3.PNG" alt="Sharing tab">
+</li>
 <li>Select both options in order to <em>Allow other network users</em> (your Raspberry Pi) <em>to connect through this computer´s Internet connection</em>
 </li>
-<li>
-<em><strong>NOTE: AT THIS POINT IT IS IMPORTANT TO TAKE INTO ACCOUNT THAT YOU HAVE TO ALLOW JUST THE ETHERNET CONNECTION! YOU MAY HAVE OTHER KIND OF NETWORK CONNECTIONS (LIKE A VIRTUAL MACHINE HOST), WE DO NOT WANT TO SHARE INTERNET WITH ANYTHING ELSE IN THIS CASE, JUST WITH THE COMPONENT THAT WILL BE CONNECTED TO OUR COMPUTER VIA ETHERNET (THIS IS YOUR RASPBERRY PI). IN CASE YOU HAVE ANY ISSUE OPEN YOUR NETWORK CONNECTIONS AND DISABLE THE OTHER ADAPTERS (SPECIALLY, VIRTUAL MACHINE ADAPTER CONNECTIONS SUCH AS VIRTUALBOX OR VM WARE).</strong></em>
-IMAGE</li>
+<li><em><strong>NOTE: AT THIS POINT IT IS IMPORTANT TO TAKE INTO ACCOUNT THAT YOU HAVE TO ALLOW JUST THE ETHERNET CONNECTION! YOU MAY HAVE OTHER KIND OF NETWORK CONNECTIONS (LIKE A VIRTUAL MACHINE HOST), WE DO NOT WANT TO SHARE INTERNET WITH ANYTHING ELSE IN THIS CASE, JUST WITH THE COMPONENT THAT WILL BE CONNECTED TO OUR COMPUTER VIA ETHERNET (THIS IS YOUR RASPBERRY PI). IN CASE YOU HAVE ANY ISSUE OPEN YOUR NETWORK CONNECTIONS AND DISABLE THE OTHER ADAPTERS (SPECIALLY, VIRTUAL MACHINE ADAPTER CONNECTIONS SUCH AS VIRTUALBOX OR VM WARE).</strong></em></li>
 </ul>
 </li>
-<li>In this part you have to set the wired configuration. If you did the last part correctly, your computer will assign an IP to your Pi through the Ethernet port, you can check that clicking on the <em>Ethernet</em> connection and then <em>Details</em> in the <em>Network and Sharing Center</em>
+<li>In this part you have to set the wired configuration. If you did the last part correctly, your computer will assign an IP to your Pi through the Ethernet port, you can check that clicking on the <em>Ethernet</em> connection (of course, once you have finished with this step) and then <em>Details</em> in the <em>Network and Sharing Center</em>
 
 <ul>
 <li>Stick your SD card in the Pi´s slot.</li>
 <li>Ethernet cable connecting the Pi and your laptop.</li>
 <li>Power supply to the Pi. </li>
 <li>After all the Pi should look like this</li>
-<li>IMAGE</li>
+<li><img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/IMG_4718.JPG?raw=true" alt="Pi set up"></li>
 <li><em><strong>Note: check that there is a red light near to the power supply and another one green and yellow under the Ethernet connection.</strong></em></li>
 </ul>
 </li>
 <li>Open Xming, I recommend the <em>One Window</em> display setting, otherwise it will get confusing to navigate between the Pi´s windows and your laptop´s windows. Then select the default settings.
-IMAGE</li>
+<img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/xming1.PNG?raw=true" alt="Xming settings">
+</li>
 <li>Open Putty and set the following configuration:
 
 <ul>
@@ -206,7 +207,9 @@ IMAGE</li>
 <li>
 <strong>Connection Type:</strong> SSH</li>
 <li>In the <em>Connection</em> category (left side), expand <em>SSH</em>, click on <em>X11</em> and enable <strong>X11 forwarding</strong>.</li>
-<li>(Optional) I would recommend to save the settings in order to not repeating the same thing always we want to connect to the Pi via PuTTy.</li>
+<li>(Optional) I would recommend to save the settings in order to not repeating the same thing always we want to connect to the Pi via PuTTy.
+<img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/putty.PNG?raw=true" alt="PuTTy configuration">
+</li>
 <li>Click on <em>Open</em>. That will connect your laptop or computer to your Pi.</li>
 <li>A PuTTy terminal will appear. Input the following login setup:
 
@@ -215,15 +218,18 @@ IMAGE</li>
 <strong>Login as:</strong> pi</li>
 <li>
 <strong>Password:</strong> raspberry</li>
+<li>Now you have accessed to your Pi! In order to start the GUI and make the process more intuitive type this command: <em><strong>startlxde</strong></em>
+<img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/putty%20command.PNG?raw=true" alt="PuTTy command">
+</li>
 </ul>
 </li>
-<li>Now Xming will work as your Pi´s screen </li>
+<li>Now Xming will work as your Pi´s screen</li>
 <li>Congratulations you can navigate within your Pi, use internet and download your programs directly, and all that using your computer´s keyboard and mouse!</li>
 </ul>
 </li>
 </ol>
 
-<p>IMAGE</p>
+<p><img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/working.PNG?raw=true" alt="Pi's screen through Xming"></p>
 
 <hr>
 
@@ -247,6 +253,9 @@ This approach will be based on the same steps as in the section How to get start
 
 <p>The details of this simple project can be found <a href="https://pimylifeup.com/raspberry-pi-dosbox/">here</a>. 
 In this case all we have to do is following the same steps as before. Once we have the Pi´s display in Xming we will start with the tutorial from <strong>PiMyLife</strong>.</p>
+
+<p>The result should loook like this:
+<img src="https://github.com/alejompb/RaspberryPiTutorial/blob/master/dosbox.PNG?raw=true" alt="Outrun-dosbox"></p>
 
 <h2>
 <a id="example-of-project-using-a-specialized-os" class="anchor" href="#example-of-project-using-a-specialized-os" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example of project using a specialized OS</h2>
