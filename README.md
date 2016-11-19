@@ -3,11 +3,12 @@ In this tutorial I will make an introduction and a general overview of what is, 
 
 *Note that I will use the Raspberry Pi model 3B. Some features may change from model to model, however, the main concept will be always the same.*
 
-* [What is a Raspberry Pi](# What is a Raspberry Pi)
-* [How to get started](# How to get started)
-* [Different Pi project implementations](#Different Pi project implementations)
-   - [Example of project using a Pi OS (Raspbian)](## Example of project using a Pi OS (Raspbian))
-   - [Example of project installing a new image of an adapted OS](## Example of project installing a new image of an adapted OS)
+* [What is a Raspberry Pi](#What-is-a-Raspberry-Pi)
+[Updating to New Releases](#updating-to-new-releases)
+* [How to get started](#How-to-get-started)
+* [Different Pi project implementations](#Different-Pi-project-implementations)
+   - [Example of project using a Pi OS (Raspbian)](#Example-of-project-using-a-Pi-OS-(Raspbian))
+   - [Example of project installing a new image of an adapted OS](#Example-of-project-installing-a-new-image-of-an-adapted-OS)
 
 
 ****
@@ -61,7 +62,7 @@ In this section you will learn how to set up the Pi without using any optional c
 * [SETTING UP RASPBERRY PI USING A MONITOR, HDMI CABLE, WIRELESS KEYBOARD AND WIRELESS MOUSE.]
 (https://www.youtube.com/watch?v=L3amYDRlIUs)
 
-*AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION:* [Different Pi project implementations](# Different Pi project implementations)
+*AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION:* [Different Pi project implementations](#Different-Pi-project-implementations)
 
 There are plenty of ways of how to set up your Pi. I have decided to show you how to do it using the least number of hardware components, if you are a student and you cannot wait to buy everything you need. 
 First of all, I will list the software components that you need to download and install.
