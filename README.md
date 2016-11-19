@@ -6,7 +6,7 @@ In this tutorial I will make an introduction and a general overview of what is, 
 * [What is a Raspberry Pi](#what-is-a-raspberry-pi)
 * [How to get started](#how-to-get-started)
 * [Different Pi project implementations](#different-pi-project-implementations)
-   - [Example of project using a Pi OS (Raspbian)](#example-of-project-using-a-pi-os-(raspbian))
+   - [Example of project using a Pi OS (Raspbian)](#example-of-project-using-a-pi-os-raspbian)
    - [Example of project installing a new image of an adapted OS](#example-of-project-installing-a-new-image-of-an-adapted-os)
 
 
