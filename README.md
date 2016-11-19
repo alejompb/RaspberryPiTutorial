@@ -157,7 +157,7 @@ In this case all we have to do is following the same steps as before. Once we ha
 The result should loook like this:
 ![Outrun-dosbox](https://github.com/alejompb/RaspberryPiTutorial/blob/master/dosbox.PNG?raw=true)
 
-## Example of project using a specialized OS
+## Example of project installing a new image of an adapted OS
 
 The details of this project can be found [here](https://pimylifeup.com/raspberry-pi-emulator/).
 In this case we will follow the steps mentioned in [How to get started section](#How to get started). The changes are the following:
