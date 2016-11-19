@@ -61,7 +61,7 @@ In this section you will learn how to set up the Pi without using any optional c
 * [SETTING UP RASPBERRY PI USING A MONITOR, HDMI CABLE, WIRELESS KEYBOARD AND WIRELESS MOUSE.]
 (https://www.youtube.com/watch?v=L3amYDRlIUs)
 
-*AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION:* [Different Pi project implementations](#Different-Pi-project-implementations)
+*AFTER THE THESE STEPS, YOU CAN GO TO THE NEXT SECTION:* [Different Pi project implementations](#different-pi-project-implementations)
 
 There are plenty of ways of how to set up your Pi. I have decided to show you how to do it using the least number of hardware components, if you are a student and you cannot wait to buy everything you need. 
 First of all, I will list the software components that you need to download and install.
